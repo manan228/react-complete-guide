@@ -33,7 +33,7 @@ function App() {
       <h2>Lets get started</h2>
       {expenses.map(item => {
 
-        return <ExpenseItem title={item.title} amount={item.amount} date={item.date} location={item.locationOfExpense}></ExpenseItem>
+        return <ExpenseItem title={item.title} amount={item.amount} date={item.date} location={item.locationOfExpense}/>
       })}
     </div>
   );
