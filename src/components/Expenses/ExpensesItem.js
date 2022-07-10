@@ -6,12 +6,12 @@ import './ExpenseItem.css';
 
 const ExpenseItem = props => {
 
-    const [title, setTitle] = useState(props.title);
+    let [title, setTitle] = useState(props.title);
     const [expense, setExpense] = useState(props.amount);
 
     const clickHandler = () => {
 
-        setTitle(`Updated`);
+        setTitle(`Updated`);        
     }
 
     return (
