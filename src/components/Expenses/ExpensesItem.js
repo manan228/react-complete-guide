@@ -9,6 +9,7 @@ const ExpenseItem = props => {
     <Card className="expense-item">
         <ExpenseDate date={props.date}/>
         <ExpenseDetails title={props.title} location={props.location} amount={props.amount}/>
+        <button onClick={() => console.log(`clicked`)}>Button</button>
     </Card>
     )
 }
