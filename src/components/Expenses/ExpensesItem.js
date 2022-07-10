@@ -6,20 +6,24 @@ import './ExpenseItem.css';
 
 const ExpenseItem = props => {
 
-    let [title, setTitle] = useState(props.title);
-    const [expense, setExpense] = useState(props.amount);
+    // Doubt {
+    // let [title, setTitle] = useState(props.title);
+    // const [expense, setExpense] = useState(props.amount);
+//}
+    // const clickHandler = () => {
 
-    const clickHandler = () => {
-
-        setTitle(`Updated`);        
-    }
+    //     setTitle(`Updated`);        
+    // }
 
     return (
     <Card className="expense-item">
         <ExpenseDate date={props.date}/>
-        <ExpenseDetails title={title} location={props.location} amount={expense}/>
-        <button onClick={clickHandler}>Button</button>
-        <button onClick={() => setExpense(100)}>Update Expense</button>
+        {/* <ExpenseDetails title={title} amount={expense}/> */}
+        <ExpenseDetails title={props.title} amount={props.amount}/>
+        {/* <button onClick={clickHandler}>Button</button> */}
+        <button>Button</button>
+        {/* <button onClick={() => setExpense(100)}>Update Expense</button> */}
+        <button>Update Expense</button>
     </Card>
     )
 }
